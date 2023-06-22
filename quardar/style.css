@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333;
+}
+
+.card{
+    position: relative;
+    background-color: rgb(106, 107, 107);
+    width: 300px;
+    height: 400px;
+}
+
+.card span:first-of-type{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 3px;
+background: linear-gradient(to right, transparent , #fff ,rgb(109, 11, 175), rgb(63, 1, 134));
+animation: animar1 4s linear infinite;
+}
+
+@keyframes animar1{
+        0%{
+            transform: translateX(-100%);
+
+        }
+
+        100%{
+
+            transform: translateX(100%);
+
+        }
+
+}
+
+.card span:nth-of-type(2){
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent , #fff ,rgb(109, 11, 175), rgb(63, 1, 134));
+    animation: animar2 4s linear infinite;
+}
+
+    @keyframes animar2{
+        0%{
+            transform: translateY(-100%);
+
+        }
+
+        100%{
+
+            transform: translateX(100%);
+
+        }
+
+    }
+
+.card span:nth-of-type(3){
+        position: absolute;
+        bottom: 0;
+        right:0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to left, transparent , #fff ,rgb(109, 11, 175), rgb(63, 1, 134)); 
+        animation: animar3 4s linear infinite;
+    }
+
+        @keyframes animar3{
+            0%{
+                transform: translateX(100%);
+    
+            }
+    
+            100%{
+    
+                transform: translateX(-100%);
+    
+            }
+        }
+
+        .card span:nth-of-type(4){
+            position: absolute;
+            top: 0;
+            left:0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to top, transparent , #fff ,rgb(109, 11, 175), rgb(63, 1, 134));         
+            animation: animar4 4s linear infinite;
+        }
+
+            @keyframes animar4{
+                0%{
+                    transform: translateY(100%);
+        
+                }
+        
+                100%{
+        
+                    transform: translateX(-100%);
+        
+                }
+        
+            }
