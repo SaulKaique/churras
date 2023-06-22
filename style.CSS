@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    block-size: border-box  ;
+
+}
+
+html{
+
+    width: 150%;
+    height: 120%;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+background-image: linear-gradient(to bottom left, red, yellow);
+
+
+}
+
+
+th , td{
+
+ border: 2px solid black;
+border-collapse: collapse;
+    font-size: 30px;
+    position: relative;
+    background-color: white;
+   
+   
+}
+
+th{
+    background-color: blue;
+
+
+}
+.tabela{
+    position: relative;
+    border: 2px solid black;
+    border-collapse: collapse;
+    height: 100px;
+    left: 500px;
+    top: 350px;
+}
+
+table{
+    position: relative;
+    top: 400px;
+
+}
+
+#resp{
+    position: relative;
+   
+    height: 300px;
+    width: 400px;
+}
+
+h1{
+    text-align: center;
+
+
+}
+
+.card{
+        position: relative;
+        background-color: black;
+        height: 400px;
+        width: 500px;
+}
+
+.card:first-of-type{
+    position: absolute;
+    top: 0;
+    left: 0;
+background: linear-gradient(to right, trasparent,rgb(240, 232, 240), rgb(48, 5, 58));
+
+
+}
+
+
