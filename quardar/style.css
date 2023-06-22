@@ -17,6 +17,7 @@ body{
     background-color: rgb(106, 107, 107);
     width: 300px;
     height: 400px;
+    overflow: hidden;
 }
 
 .card span:first-of-type{
@@ -24,7 +25,7 @@ position: absolute;
 top: 0;
 left: 0;
 width: 100%;
-height: 3px;
+height: 5px;
 background: linear-gradient(to right, transparent , #fff ,rgb(109, 11, 175), rgb(63, 1, 134));
 animation: animar1 4s linear infinite;
 }
@@ -47,10 +48,12 @@ animation: animar1 4s linear infinite;
     position: absolute;
     top: 0;
     right:0;
-    width: 3px;
+    width: 5px;
     height: 100%;
     background: linear-gradient(to bottom, transparent , #fff ,rgb(109, 11, 175), rgb(63, 1, 134));
     animation: animar2 4s linear infinite;
+    animation-delay: 1s;
+    
 }
 
     @keyframes animar2{
@@ -72,7 +75,7 @@ animation: animar1 4s linear infinite;
         bottom: 0;
         right:0;
         width: 100%;
-        height: 3px;
+        height: 5px;
         background: linear-gradient(to left, transparent , #fff ,rgb(109, 11, 175), rgb(63, 1, 134)); 
         animation: animar3 4s linear infinite;
     }
@@ -94,10 +97,11 @@ animation: animar1 4s linear infinite;
             position: absolute;
             top: 0;
             left:0;
-            width: 3px;
+            width: 5px;
             height: 100%;
             background: linear-gradient(to top, transparent , #fff ,rgb(109, 11, 175), rgb(63, 1, 134));         
             animation: animar4 4s linear infinite;
+            animation-delay: 1s;
         }
 
             @keyframes animar4{
