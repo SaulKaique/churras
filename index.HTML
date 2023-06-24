@@ -6,79 +6,43 @@
     <title>Churras 😎</title>
     <link rel="stylesheet" href="style.CSS">
 </head>
-<body>
-            <table class="tabela">
-                <tr>
-                    <th>ITEM</th>            
-                    <th>ADULTO</th>               
-                    <th>CRIANÇA</th>
-           
-            <tr>
-                <td>carne</td>
-                <td>400g</td>
-                <td>200g</td>
+<body>      
+             <header>
+                <div class="logo"> 
 
+                </div>
                
+            <h1>Churrasco</h1>
 
-
-            </tr>
-
-            <tr>
-                <td>Acompanhamentos</td>
-                <td>200g</td>
-                <td>200g</td>
-            </tr>
-           
-            <tr>
-                <td>cerveja</td>
-                <td>2l</td>
-                <td>--</td>
-            </tr>
-
-            <tr>
-                <td>refrigerante</td>
-                <td>500ml</td>
-                <td>500ml</td>
-            </tr>
-
-            <tr>
-                <td>água</td>
-                <td>400ml</td>
-                <td>400ml</td>
-            </tr>            
-                </table>
-
-              
-               
-               <div class="card" >
-                <form action="" id="resp"> 
-
-                    <div class="container" >
-                        <div row >
-                            <input  type="text"   placeholder="ADULTOS QUEM USAM  BEBIDAS ALCÓOLICAS" name="" id="valor1">
-    
-                            <input  type="text"   placeholder="ADULTOS QUEM NÃO USAM  BEBIDAS ALCÓOLICAS" name="" id="valor2">
-    
-                            <input  type="text"   placeholder="CRIANÇAS" name="" id="valor3">
-    
-                            <input type="button" value="Caucular">
-                            <input type="reset" value="Limpar">
-    
-                        </div>
-                    </div>
-    
-                   </form>
-                
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-
-
-               </div>
-                
-
-
+             </header>
+             <div class="container">
+                <h1>Churrascômetro</h1>
+                <form>
+                    <label for="adultosComAlcool">Adultos (que consomem bebidas alcoólicas):</label>
+                    <input type="number" id="adultosComAlcool" name="adultosComAlcool" required>
+        
+                    <label for="adultosSemAlcool">Adultos (que não consomem bebidas alcoólicas):</label>
+                    <input type="number" id="adultosSemAlcool" name="adultosSemAlcool" required>
+        
+                    <label  for="criancas">Crianças:</label>
+                    <input type="number" id="criancas" name="criancas" required>
+        
+                    <label for="duracao">Duração do evento (horas):</label>
+                    <input type="number" id="duracao" name="duracao" required>
+        
+                    <button id="Calcular" type="button">Calcular</button>
+                </form>
+        
+                <div class="resultado">
+                    <p>Carne: <span id="carne"></span></p>
+                    <span id="acompanhamentos">acompanhamentos:</span></p>
+                    <p>Cerveja: <span id="cerveja"></span></p>
+                    <p>Refrigerante: <span id="refrigerante"></span></p>
+                    <p>Água: <span id="agua"></span></p>
+                </div>
+            </div>
+            <script src="index.JS"></script>
+        
 
 </body>
 </html>
